@@ -33,7 +33,7 @@ main.tarjeta {
     background-position: top left; 
 }
 
-img.foto {
+img.foto2 {
     width: 200px;
     min-height: 250px;
     object-fit: cover;
@@ -79,7 +79,7 @@ p.nombre {
     p.nombre {
         font-size: 3rem;
     }
-    img.foto {
+    img.foto2 {
         width: 350px;
         height: 420px;
         padding: 10px;
