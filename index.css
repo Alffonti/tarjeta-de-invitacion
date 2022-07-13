@@ -8,27 +8,25 @@ body{
     color: #222222;
     font-family: 'Goudy Bookletter 1911', serif;
     text-align: center;
-    
+    line-height: 1.8;
+    font-size: 1rem; 
 }
 
-main.poem {
-    background: url("images/foto-con-papa.jpg") ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 10px;
+a {
+    text-decoration: none;
+    color: #222222;
 }
 
 main.tarjeta {
     width: 90%;
     /* max-width: 700px; */
     margin: 0 auto;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-image: url('images/patron.png');
-    padding-top: 50px;
+    padding-top: 60px;
     background-size: 200px; 
     background-repeat: repeat-x;
     background-position: top left; 
@@ -36,15 +34,11 @@ main.tarjeta {
 
 img.foto {
     width: 200px;
-    height: 200px;
+    min-height: 250px;
     object-fit: cover;
     object-position: center;
     border: 1px solid #182431;
     padding: 5px;
-}
-
-h1{
-    font-size: 48px;
 }
 
 h1.tarjeta,
@@ -56,25 +50,28 @@ p.nombre {
     margin: 0;
 }
 
-p{
-    font-size: 18px;
-    line-height: 1.8;
+.texto-invitacion,
+.info {
+    margin-bottom: 1em;
 }
 
-p.fecha {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
+.info > * {
+    /* text-transform: uppercase;
+    letter-spacing: 1px; */
+    /* font-size: 1rem; */
+    /* font-weight: bold; */
+    /* margin: 0; */
     margin: 0;
-}
-
-div.lugar {
-    margin: 40px 0;
+    margin-bottom: .25em;
 }
 
 @media (min-width:650px) {
+    body {
+        font-size: 1.125rem;
+    }
     main.tarjeta {
         display: flex;
+        height: 100vh;
         flex-direction: row;
     }
     h1.tarjeta,
@@ -82,8 +79,8 @@ div.lugar {
         font-size: 3rem;
     }
     img.foto {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 420px;
         padding: 10px;
     }
     div.derecha {
